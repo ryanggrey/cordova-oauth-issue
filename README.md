@@ -17,6 +17,7 @@
 
 ## Observed Behaviour
 Points 1 and 2 occur as expected. Tapping the page, as in point 3, does nothing.
+
 ## Notes
 - The 400 error should be ignored. This is because we're calling function `google` without correct params. It has been confirmed that the same issue occurs (app stops responding to touch gestures) when using `google` function with correct params/authorisation.
 - Removing the line `driveService.authenticate()` from `touch.js` resolves the issue; tapping on the page brings up the in-app-browser which can then be dismissed, and further taps continue to correctly bring up the in-app-browser. Also putting this line in a `$timeout` with a big enough delay solves the issue. Note that putting this line in a `$timeout` without a delay does not resolve the issue. This makes me think that something that ng-cordova-oauth/in-app-browser relies on has yet to load when the issue occurs.
