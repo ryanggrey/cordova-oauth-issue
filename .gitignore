@@ -9,9 +9,9 @@ www/lib/
 .idea
 tests/coverage
 fastlane/
-oauth-bug.app.dSYM.zip
-oauth-bug.ipa
+inappbrowser-bug.app.dSYM.zip
+inappbrowser-bug.ipa
 buildOutput/
 node/
-Distribution_com.oauth-bug.mobileprovision
-platforms/ios/oauth-bug.xcodeproj/project.xcworkspace/xcuserdata
+Distribution_com.inappbrowser-bug.mobileprovision
+platforms/ios/inappbrowser-bug.xcodeproj/project.xcworkspace/xcuserdata

@@ -1,4 +1,4 @@
-angular.module('oauth-bug.controllers.touch', [])
+angular.module('inappbrowser-bug.controllers.touch', [])
 
 .controller('TouchCtrl', ['$timeout', '$ionicPlatform', '$log', '$scope', function ($timeout, $ionicPlatform, $log, $scope) {
   $ionicPlatform.ready(function () {

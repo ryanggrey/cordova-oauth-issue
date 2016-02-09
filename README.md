@@ -1,4 +1,4 @@
-# Cordova-oauth Issue Demo
+# Cordova-plugin-inappbrowser Issue Demo
 
 ## Install
 1. Clone this project

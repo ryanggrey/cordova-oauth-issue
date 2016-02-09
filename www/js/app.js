@@ -1,10 +1,8 @@
 
-angular.module('oauth-bug',
+angular.module('inappbrowser-bug',
 [
   'ionic',
-  'ngCordovaOauth',
-  'oauth-bug.services.driveService',
-  'oauth-bug.controllers.touch',
+  'inappbrowser-bug.controllers.touch',
 ])
 
 .run(['$ionicPlatform', function ($ionicPlatform) {
