@@ -1,6 +1,6 @@
 angular.module('oauth-bug.controllers.touch', [])
 
-.controller('TouchCtrl', ['$timeout', '$ionicPlatform', '$log', '$scope', 'driveService', function ($timeout, $ionicPlatform, $log, $scope, driveService) {
+.controller('TouchCtrl', ['$timeout', '$ionicPlatform', '$log', '$scope', function ($timeout, $ionicPlatform, $log, $scope) {
   $ionicPlatform.ready(function () {
     $scope.count = 0;
 
@@ -8,17 +8,21 @@ angular.module('oauth-bug.controllers.touch', [])
       $scope.count++;
       $log.debug('Touches', $scope.count);
 
-      driveService.authenticate();
+      popUp();
+    };
+
+    var popUp = function () {
+      cordova.InAppBrowser.open('http://google.com', '_blank');
     };
 
     // stops future gestures
-    driveService.authenticate();
+    popUp();
 
     // stops future gestures
-    // $timeout(driveService.authenticate);
+    // $timeout(popUp);
 
     // does not stop future gestures
-    // $timeout(driveService.authenticate, 5000);
+    // $timeout(popUp, 5000);
   });
 },
 ]);
