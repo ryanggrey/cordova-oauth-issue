@@ -2,7 +2,7 @@
 <widget id="com.ionicframework.oauthbug784627" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>oauth-bug</name>
     <description>
-        Demonstrates cordova oauth/in-app-browser issue.
+        Demonstrates cordova-plugin-inappbrowser issue.
     </description>
     <author email="ryan.g.grey@gmail.com">
       Ryan Grey
